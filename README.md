@@ -1,3 +1,312 @@
-# daitluong.github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG AI Solutions - Intelligent Document Processing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<h1>Hello, I am hosting on Github</h1>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path d="M0,0 Q300,60 600,0 T1200,0 L1200,120 L0,120 Z" fill="rgba(255,255,255,0.05)"/></svg>') repeat-x;
+            opacity: 0.3;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .tagline {
+            font-size: 1.4em;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 16px 40px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .section {
+            padding: 80px 20px;
+        }
+
+        .section-dark {
+            background: #f8f9fa;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            text-align: center;
+            color: #2d3748;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .feature {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .feature h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #667eea;
+        }
+
+        .how-it-works {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .step-number {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #667eea;
+            min-width: 60px;
+        }
+
+        .step-content h3 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            color: #2d3748;
+        }
+
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .tagline {
+                font-size: 1.1em;
+            }
+
+            .step {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+            <h1>RAG AI Solutions</h1>
+            <p class="tagline">Retrieval-Augmented Generation: Where Knowledge Meets Intelligence</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <h2>What is RAG AI?</h2>
+            <p style="max-width: 800px; margin: 0 auto; font-size: 1.2em; text-align: center; color: #4a5568;">
+                Retrieval-Augmented Generation (RAG) combines the power of large language models with your company's specific knowledge base. 
+                Instead of relying solely on pre-trained information, RAG AI retrieves relevant documents and data in real-time, 
+                delivering accurate, contextual, and up-to-date answers tailored to your business needs.
+            </p>
+
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Precise Accuracy</h3>
+                    <p>Access real-time information from your documents, reducing hallucinations and ensuring factual responses based on your actual data.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure & Private</h3>
+                    <p>Your data stays within your infrastructure. RAG keeps sensitive information secure while providing intelligent insights.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Always Current</h3>
+                    <p>Update your knowledge base anytime. RAG adapts instantly without requiring model retraining or complex updates.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">💰</div>
+                    <h3>Cost Effective</h3>
+                    <p>Leverage powerful AI without the expense of training custom models. RAG delivers enterprise-grade results efficiently.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Source Transparency</h3>
+                    <p>Every answer includes citations to source documents, providing full traceability and building trust in AI responses.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">📈</div>
+                    <h3>Scalable Solution</h3>
+                    <p>From startups to enterprises, RAG scales with your needs, handling millions of documents without compromising performance.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section section-dark">
+        <div class="container">
+            <h2>How RAG AI Works</h2>
+            <div class="how-it-works">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Query Processing</h3>
+                        <p>A user asks a question, and the system analyzes the intent and context to understand what information is needed.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Intelligent Retrieval</h3>
+                        <p>The RAG system searches your knowledge base using semantic search, finding the most relevant documents and passages.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Context Augmentation</h3>
+                        <p>Retrieved information is combined with the original query, creating a rich context for the AI model to work with.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Intelligent Response</h3>
+                        <p>The language model generates a precise, accurate answer based on your actual data, complete with source citations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container" style="text-align: center;">
+            <h2>Transform Your Business with RAG AI</h2>
+            <p style="max-width: 700px; margin: 0 auto 40px; font-size: 1.2em; color: #4a5568;">
+                Ready to unlock the full potential of your organization's knowledge? 
+                Let's build an intelligent system that truly understands your business.
+            </p>
+            <a href="mailto:contact@rag-ai-solutions.com" class="cta-button" id="contact">Contact Us Today</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 <a href="https://rag-ai-solutions.com">rag-ai-solutions.com</a> | Empowering businesses with intelligent AI solutions</p>
+        </div>
+    </footer>
+</body>
+</html>
