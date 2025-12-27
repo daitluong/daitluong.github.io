@@ -235,14 +235,46 @@
         </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="contact">
         <div class="container" style="text-align: center;">
             <h2>Transform Your Business with RAG AI</h2>
             <p style="max-width: 700px; margin: 0 auto 40px; font-size: 1.2em; color: #4a5568;">
                 Ready to unlock the full potential of your organization's knowledge? 
                 Let's build an intelligent system that truly understands your business.
             </p>
-            <a href="mailto:contact@rag-ai-solutions.com" class="cta-button" id="contact">Contact Us Today</a>
+            
+            <!-- Contact Form -->
+            <div style="max-width: 600px; margin: 0 auto;">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Your full name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@company.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company" placeholder="Your company name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project or how we can help..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="cta-button">Send Message</button>
+                    <div id="formStatus" class="form-status"></div>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -328,6 +360,67 @@
     </div>
 
     <script>
+        // Contact Form Handler
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            const formStatus = document.getElementById('formStatus');
+
+            if (contactForm) {
+                contactForm.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+
+                    const submitButton = contactForm.querySelector('button[type="submit"]');
+                    const originalButtonText = submitButton.textContent;
+                    
+                    // Get form data
+                    const formData = {
+                        name: document.getElementById('name').value,
+                        email: document.getElementById('email').value,
+                        company: document.getElementById('company').value,
+                        phone: document.getElementById('phone').value,
+                        message: document.getElementById('message').value,
+                        timestamp: new Date().toISOString()
+                    };
+
+                    // Show loading state
+                    submitButton.textContent = 'Sending...';
+                    submitButton.disabled = true;
+                    formStatus.textContent = '';
+                    formStatus.className = 'form-status';
+
+                    try {
+                        // Create mailto link as fallback
+                        const subject = encodeURIComponent('Contact Form Submission from ' + formData.name);
+                        const body = encodeURIComponent(
+                            `Name: ${formData.name}\n` +
+                            `Email: ${formData.email}\n` +
+                            `Company: ${formData.company}\n` +
+                            `Phone: ${formData.phone}\n\n` +
+                            `Message:\n${formData.message}`
+                        );
+                        
+                        // Open mailto link
+                        window.location.href = `mailto:contact@rag-ai-solutions.com?subject=${subject}&body=${body}`;
+                        
+                        // Show success message
+                        formStatus.textContent = 'Your email client should open. If not, please email us directly at contact@rag-ai-solutions.com';
+                        formStatus.className = 'form-status success';
+                        
+                        // Reset form
+                        contactForm.reset();
+                        
+                    } catch (error) {
+                        console.error('Form submission error:', error);
+                        formStatus.textContent = 'There was an issue. Please email us directly at contact@rag-ai-solutions.com';
+                        formStatus.className = 'form-status error';
+                    } finally {
+                        submitButton.textContent = originalButtonText;
+                        submitButton.disabled = false;
+                    }
+                });
+            }
+        });
+
         // Cookie Consent Manager with Region Detection
         class CookieConsentManager {
             constructor() {
