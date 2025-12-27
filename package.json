@@ -1,0 +1,22 @@
+{
+  "name": "rag-ai-solutions",
+  "version": "1.0.0",
+  "description": "RAG AI Solutions - Intelligent Document Processing",
+  "main": "index.html",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./styles.css --minify",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./styles.css --watch",
+    "dev": "npm run watch:css"
+  },
+  "keywords": [
+    "RAG",
+    "AI",
+    "Machine Learning",
+    "Document Processing"
+  ],
+  "author": "RAG AI Solutions - FireFlyDevOps, LLC",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
