@@ -759,9 +759,10 @@ h1 {
 }
 
 .logo {
+  display: block;
   max-width: 150px;
   height: auto;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
   animation: fadeInDown 0.8s ease-out;
 }
 
