@@ -1,8 +1,138 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RAG AI Solutions - Intelligent Document Processing</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags -->
+    <title>RAG AI Solutions - Intelligent Document Processing & Retrieval-Augmented Generation</title>
+    <meta name="title" content="RAG AI Solutions - Intelligent Document Processing & Retrieval-Augmented Generation">
+    <meta name="description" content="Transform your business with RAG AI Solutions. Retrieval-Augmented Generation combines powerful language models with your knowledge base for accurate, real-time, contextual AI responses. GDPR compliant, secure, and scalable.">
+    <meta name="keywords" content="RAG AI, Retrieval Augmented Generation, AI Solutions, Document Processing, Machine Learning, Natural Language Processing, Enterprise AI, Knowledge Management, Semantic Search, AI Chatbot, LLM Integration, Business Intelligence, Data Analytics">
+    <meta name="author" content="RAG AI Solutions - FireFlyDevOps, LLC">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://rag-ai-solutions.com/">
+    
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rag-ai-solutions.com/">
+    <meta property="og:title" content="RAG AI Solutions - Intelligent Document Processing & Retrieval-Augmented Generation">
+    <meta property="og:description" content="Transform your business with RAG AI Solutions. Leverage the power of Retrieval-Augmented Generation for accurate, contextual AI responses based on your actual data.">
+    <meta property="og:image" content="https://rag-ai-solutions.com/Logo-removebg-preview.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="RAG AI Solutions">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://rag-ai-solutions.com/">
+    <meta name="twitter:title" content="RAG AI Solutions - Intelligent Document Processing">
+    <meta name="twitter:description" content="Transform your business with RAG AI Solutions. Leverage Retrieval-Augmented Generation for accurate, contextual AI responses.">
+    <meta name="twitter:image" content="https://rag-ai-solutions.com/Logo-removebg-preview.png">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#667eea">
+    <meta name="msapplication-TileColor" content="#667eea">
+    
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="US">
+    <meta name="geo.placename" content="United States">
+    
+    <!-- Structured Data / JSON-LD for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "RAG AI Solutions",
+      "url": "https://rag-ai-solutions.com",
+      "logo": "https://rag-ai-solutions.com/Logo-removebg-preview.png",
+      "description": "Enterprise AI solutions powered by Retrieval-Augmented Generation technology",
+      "foundingDate": "2024",
+      "founder": {
+        "@type": "Organization",
+        "name": "FireFlyDevOps, LLC"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "contact@rag-ai-solutions.com",
+        "contactType": "Customer Service"
+      },
+      "sameAs": [
+        "https://rag-ai-solutions.com"
+      ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "RAG AI Solutions",
+      "url": "https://rag-ai-solutions.com",
+      "description": "Intelligent Document Processing and Retrieval-Augmented Generation AI Solutions",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://rag-ai-solutions.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "AI & Machine Learning Solutions",
+      "provider": {
+        "@type": "Organization",
+        "name": "RAG AI Solutions"
+      },
+      "areaServed": "Worldwide",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "RAG AI Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Retrieval-Augmented Generation Implementation",
+              "description": "Custom RAG AI solutions for intelligent document processing and knowledge management"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Enterprise AI Integration",
+              "description": "Seamless integration of AI solutions with your existing infrastructure"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AI Consulting & Strategy",
+              "description": "Expert guidance on implementing AI solutions for your business needs"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+    
     <style>
         * {
             margin: 0;
@@ -199,6 +329,225 @@
                 text-align: center;
             }
         }
+
+        /* Cookie Consent Banner Styles */
+        .cookie-consent-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #2d3748;
+            color: white;
+            padding: 20px;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.2);
+            z-index: 9999;
+            transform: translateY(100%);
+            transition: transform 0.4s ease;
+        }
+
+        .cookie-consent-banner.show {
+            transform: translateY(0);
+        }
+
+        .cookie-consent-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .cookie-consent-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .cookie-consent-text h3 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .cookie-consent-text p {
+            margin: 0;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+
+        .cookie-consent-text a {
+            color: #667eea;
+            text-decoration: underline;
+        }
+
+        .cookie-consent-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .cookie-btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.95em;
+        }
+
+        .cookie-btn-accept {
+            background: #667eea;
+            color: white;
+        }
+
+        .cookie-btn-accept:hover {
+            background: #5568d3;
+        }
+
+        .cookie-btn-reject {
+            background: #e53e3e;
+            color: white;
+        }
+
+        .cookie-btn-reject:hover {
+            background: #c53030;
+        }
+
+        .cookie-btn-customize {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .cookie-btn-customize:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .cookie-preferences-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.7);
+            z-index: 10000;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .cookie-preferences-modal.show {
+            display: flex;
+        }
+
+        .cookie-preferences-content {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 600px;
+            width: 100%;
+            max-height: 80vh;
+            overflow-y: auto;
+            color: #2d3748;
+        }
+
+        .cookie-preferences-content h2 {
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .cookie-category {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .cookie-category-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .cookie-category h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        .cookie-toggle {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 24px;
+        }
+
+        .cookie-toggle input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .cookie-toggle-slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 24px;
+        }
+
+        .cookie-toggle-slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        .cookie-toggle input:checked + .cookie-toggle-slider {
+            background-color: #667eea;
+        }
+
+        .cookie-toggle input:checked + .cookie-toggle-slider:before {
+            transform: translateX(26px);
+        }
+
+        .cookie-toggle input:disabled + .cookie-toggle-slider {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .cookie-preferences-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            justify-content: flex-end;
+        }
+
+        @media (max-width: 768px) {
+            .cookie-consent-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .cookie-consent-buttons {
+                width: 100%;
+            }
+
+            .cookie-btn {
+                flex: 1;
+            }
+        }
     </style>
 </head>
 <body>
@@ -315,5 +664,352 @@
             <p>&copy; 2024 <a href="https://rag-ai-solutions.com">rag-ai-solutions.com</a> | Empowering businesses with intelligent AI solutions | Powered FireFlyDevOps, LLC.</p>
         </div>
     </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-consent-banner" id="cookieConsentBanner">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <h3 id="cookieConsentTitle">Cookie Consent</h3>
+                <p id="cookieConsentMessage">
+                    We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. 
+                    By clicking "Accept All", you consent to our use of cookies.
+                </p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="cookie-btn cookie-btn-accept" id="acceptAllCookies">Accept All</button>
+                <button class="cookie-btn cookie-btn-reject" id="rejectAllCookies">Reject All</button>
+                <button class="cookie-btn cookie-btn-customize" id="customizeCookies">Customize</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Preferences Modal -->
+    <div class="cookie-preferences-modal" id="cookiePreferencesModal">
+        <div class="cookie-preferences-content">
+            <h2>Cookie Preferences</h2>
+            <p>We use different types of cookies to optimize your experience on our website. You can choose which categories you want to allow.</p>
+            
+            <div class="cookie-category">
+                <div class="cookie-category-header">
+                    <h3>Necessary Cookies</h3>
+                    <label class="cookie-toggle">
+                        <input type="checkbox" id="necessaryCookies" checked disabled>
+                        <span class="cookie-toggle-slider"></span>
+                    </label>
+                </div>
+                <p>These cookies are essential for the website to function properly. They cannot be disabled.</p>
+            </div>
+
+            <div class="cookie-category">
+                <div class="cookie-category-header">
+                    <h3>Analytics Cookies</h3>
+                    <label class="cookie-toggle">
+                        <input type="checkbox" id="analyticsCookies">
+                        <span class="cookie-toggle-slider"></span>
+                    </label>
+                </div>
+                <p>These cookies help us understand how visitors interact with our website, helping us improve our services.</p>
+            </div>
+
+            <div class="cookie-category">
+                <div class="cookie-category-header">
+                    <h3>Marketing Cookies</h3>
+                    <label class="cookie-toggle">
+                        <input type="checkbox" id="marketingCookies">
+                        <span class="cookie-toggle-slider"></span>
+                    </label>
+                </div>
+                <p>These cookies are used to track visitors across websites to display relevant advertisements.</p>
+            </div>
+
+            <div class="cookie-category">
+                <div class="cookie-category-header">
+                    <h3>Functional Cookies</h3>
+                    <label class="cookie-toggle">
+                        <input type="checkbox" id="functionalCookies">
+                        <span class="cookie-toggle-slider"></span>
+                    </label>
+                </div>
+                <p>These cookies enable enhanced functionality and personalization, such as language preferences.</p>
+            </div>
+
+            <div class="cookie-preferences-actions">
+                <button class="cookie-btn cookie-btn-reject" id="closePreferences">Cancel</button>
+                <button class="cookie-btn cookie-btn-accept" id="savePreferences">Save Preferences</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Cookie Consent Manager with Region Detection
+        class CookieConsentManager {
+            constructor() {
+                this.consentKey = 'cookie_consent';
+                this.region = null;
+                this.regionKey = 'user_region';
+                this.init();
+            }
+
+            async init() {
+                // Check if consent already given
+                const savedConsent = this.getConsent();
+                if (savedConsent) {
+                    this.applyConsent(savedConsent);
+                    return;
+                }
+
+                // Detect region and show appropriate consent
+                await this.detectRegion();
+                this.showConsentBanner();
+            }
+
+            async detectRegion() {
+                // Check if region is already cached
+                const cachedRegion = localStorage.getItem(this.regionKey);
+                if (cachedRegion) {
+                    this.region = cachedRegion;
+                    return;
+                }
+
+                try {
+                    // Use multiple geolocation APIs for better accuracy
+                    const response = await fetch('https://ipapi.co/json/');
+                    if (response.ok) {
+                        const data = await response.json();
+                        this.region = this.determineRegion(data.country_code, data.region_code);
+                        localStorage.setItem(this.regionKey, this.region);
+                    } else {
+                        // Fallback to timezone-based detection
+                        this.region = this.detectRegionByTimezone();
+                        localStorage.setItem(this.regionKey, this.region);
+                    }
+                } catch (error) {
+                    console.warn('Region detection failed, using timezone fallback:', error);
+                    this.region = this.detectRegionByTimezone();
+                    localStorage.setItem(this.regionKey, this.region);
+                }
+            }
+
+            determineRegion(countryCode, regionCode) {
+                // EU countries (GDPR applies)
+                const euCountries = [
+                    'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 
+                    'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 
+                    'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'IS', 'LI', 'NO', 'CH', 'GB'
+                ];
+
+                if (euCountries.includes(countryCode)) {
+                    return 'EU';
+                } else if (countryCode === 'US' && regionCode === 'CA') {
+                    return 'CCPA'; // California
+                } else if (countryCode === 'BR') {
+                    return 'LGPD'; // Brazil
+                } else if (countryCode === 'CN') {
+                    return 'PIPL'; // China
+                } else {
+                    return 'GENERAL';
+                }
+            }
+
+            detectRegionByTimezone() {
+                const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                
+                if (timezone.startsWith('Europe/') || timezone.includes('London')) {
+                    return 'EU';
+                } else if (timezone.includes('America/Los_Angeles') || timezone.includes('America/Phoenix')) {
+                    return 'CCPA';
+                } else if (timezone.includes('America/Sao_Paulo')) {
+                    return 'LGPD';
+                } else if (timezone.includes('Asia/Shanghai') || timezone.includes('Asia/Hong_Kong')) {
+                    return 'PIPL';
+                } else {
+                    return 'GENERAL';
+                }
+            }
+
+            showConsentBanner() {
+                const banner = document.getElementById('cookieConsentBanner');
+                const title = document.getElementById('cookieConsentTitle');
+                const message = document.getElementById('cookieConsentMessage');
+
+                // Customize message based on region
+                const messages = {
+                    'EU': {
+                        title: '🍪 Cookie Consent (GDPR)',
+                        message: 'We use cookies and similar technologies to provide, protect, and improve our services. Under GDPR, we need your explicit consent. You can customize your preferences at any time.',
+                        requireExplicit: true
+                    },
+                    'CCPA': {
+                        title: '🍪 Cookie Notice (CCPA)',
+                        message: 'We use cookies to enhance your experience. Under the California Consumer Privacy Act, you have the right to opt-out of the sale of your personal information. Click "Customize" to manage your preferences.',
+                        requireExplicit: false
+                    },
+                    'LGPD': {
+                        title: '🍪 Consentimento de Cookies (LGPD)',
+                        message: 'Usamos cookies para melhorar sua experiência. De acordo com a LGPD, precisamos do seu consentimento explícito. Você pode personalizar suas preferências a qualquer momento.',
+                        requireExplicit: true
+                    },
+                    'PIPL': {
+                        title: '🍪 Cookie Consent (PIPL)',
+                        message: 'We use cookies to provide better services. According to China\'s Personal Information Protection Law, we require your consent for data collection.',
+                        requireExplicit: true
+                    },
+                    'GENERAL': {
+                        title: '🍪 Cookie Consent',
+                        message: 'We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.',
+                        requireExplicit: false
+                    }
+                };
+
+                const regionMessage = messages[this.region] || messages['GENERAL'];
+                title.textContent = regionMessage.title;
+                message.innerHTML = regionMessage.message + ' <a href="#privacy-policy">Learn more</a>';
+
+                // Show banner with animation
+                setTimeout(() => {
+                    banner.classList.add('show');
+                }, 500);
+
+                // Set up event listeners
+                this.setupEventListeners();
+            }
+
+            setupEventListeners() {
+                document.getElementById('acceptAllCookies').addEventListener('click', () => {
+                    this.saveConsent({
+                        necessary: true,
+                        analytics: true,
+                        marketing: true,
+                        functional: true,
+                        timestamp: new Date().toISOString(),
+                        region: this.region
+                    });
+                    this.hideConsentBanner();
+                });
+
+                document.getElementById('rejectAllCookies').addEventListener('click', () => {
+                    this.saveConsent({
+                        necessary: true,
+                        analytics: false,
+                        marketing: false,
+                        functional: false,
+                        timestamp: new Date().toISOString(),
+                        region: this.region
+                    });
+                    this.hideConsentBanner();
+                });
+
+                document.getElementById('customizeCookies').addEventListener('click', () => {
+                    this.showPreferencesModal();
+                });
+
+                document.getElementById('closePreferences').addEventListener('click', () => {
+                    this.hidePreferencesModal();
+                });
+
+                document.getElementById('savePreferences').addEventListener('click', () => {
+                    this.saveCustomPreferences();
+                });
+            }
+
+            showPreferencesModal() {
+                const modal = document.getElementById('cookiePreferencesModal');
+                modal.classList.add('show');
+            }
+
+            hidePreferencesModal() {
+                const modal = document.getElementById('cookiePreferencesModal');
+                modal.classList.remove('show');
+            }
+
+            saveCustomPreferences() {
+                const consent = {
+                    necessary: true, // Always true
+                    analytics: document.getElementById('analyticsCookies').checked,
+                    marketing: document.getElementById('marketingCookies').checked,
+                    functional: document.getElementById('functionalCookies').checked,
+                    timestamp: new Date().toISOString(),
+                    region: this.region
+                };
+
+                this.saveConsent(consent);
+                this.hidePreferencesModal();
+                this.hideConsentBanner();
+            }
+
+            saveConsent(consent) {
+                localStorage.setItem(this.consentKey, JSON.stringify(consent));
+                this.applyConsent(consent);
+                
+                // Log consent for analytics (if analytics cookies are enabled)
+                if (consent.analytics) {
+                    console.log('Cookie consent saved:', consent);
+                }
+            }
+
+            getConsent() {
+                const consent = localStorage.getItem(this.consentKey);
+                if (!consent) return null;
+
+                try {
+                    return JSON.parse(consent);
+                } catch (e) {
+                    return null;
+                }
+            }
+
+            applyConsent(consent) {
+                // Apply cookie preferences
+                if (consent.analytics) {
+                    this.enableAnalytics();
+                }
+
+                if (consent.marketing) {
+                    this.enableMarketing();
+                }
+
+                if (consent.functional) {
+                    this.enableFunctional();
+                }
+
+                console.log('Cookie consent applied:', consent);
+            }
+
+            enableAnalytics() {
+                // Example: Enable Google Analytics
+                console.log('Analytics cookies enabled');
+                // window.dataLayer = window.dataLayer || [];
+                // function gtag(){dataLayer.push(arguments);}
+                // gtag('js', new Date());
+                // gtag('config', 'GA_MEASUREMENT_ID');
+            }
+
+            enableMarketing() {
+                // Example: Enable marketing pixels
+                console.log('Marketing cookies enabled');
+                // Add marketing scripts here
+            }
+
+            enableFunctional() {
+                // Example: Enable functional features
+                console.log('Functional cookies enabled');
+                // Add functional cookie scripts here
+            }
+
+            hideConsentBanner() {
+                const banner = document.getElementById('cookieConsentBanner');
+                banner.classList.remove('show');
+            }
+        }
+
+        // Initialize cookie consent manager when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => {
+                new CookieConsentManager();
+            });
+        } else {
+            new CookieConsentManager();
+        }
+    </script>
 </body>
 </html>
